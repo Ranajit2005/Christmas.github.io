@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    position: relative;  
+}
+
+.sec{
+    position: relative;
+    background: #111;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.star{
+    position: absolute;
+    color: #222;
+}
+
+.star::before{
+    content: '\f005';
+    /* content: 'Ranajit'; */
+    font-family: fontAwesome;
+}
+
+.star.animate{
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0,
+                0 0 20px #0f0,
+                0 0 50px #0f0;
+
+}
+
+.mc {
+    color: rgb(0 255 66);
+    /* background-color: auto; */
+    /* border: 3px solid white; */
+    text-shadow: 0 0 5px #ffffff,0 0 10px #ffffff,0 0 15px #00ff11,0 0 20px #29f500;
+    font-size: 30px;
+    /* margin-top: 100px; */
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    transition: all 1s ease-in-out;
+    animation: chrishmas 1s infinite ease-in-out alternate;
+}
+
+@keyframes chrishmas{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+/* .mc:hover{
+    transform: scale(1.5);
+} */
