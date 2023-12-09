@@ -21,23 +21,23 @@ setInterval(animationStars,50)
 // res.style.top = 500 + 'px';
 // res.innerText = "Hellow";
 
-function changeTextColor(){
-    res.style.color = GetRandom();
-    setTimeout(changeTextColor(),1000);
-}
+// function changeTextColor(){
+//     res.style.color = GetRandom();
+//     setTimeout(changeTextColor(),1000);
+// }
 
-function GetRandom(){
-    let LIMIT_VALUE = 256;
-    let red = GRN(LIMIT_VALUE);
-    let green = GRN(LIMIT_VALUE);
-    let blue = GRN(LIMIT_VALUE);
-    return 'rgb('+red+','+green+','+blue+')';
-}
+// function GetRandom(){
+//     let LIMIT_VALUE = 256;
+//     let red = GRN(LIMIT_VALUE);
+//     let green = GRN(LIMIT_VALUE);
+//     let blue = GRN(LIMIT_VALUE);
+//     return 'rgb('+red+','+green+','+blue+')';
+// }
 
-function GRN(limt){
-    let rn = Math.random();
-    rn = rn * limt;
-    rn = Math.floor(rn);
-    return rn;
-}
-changeTextColor();
+// function GRN(limt){
+//     let rn = Math.random();
+//     rn = rn * limt;
+//     rn = Math.floor(rn);
+//     return rn;
+// }
+// changeTextColor();
